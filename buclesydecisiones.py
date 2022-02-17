@@ -1,17 +1,20 @@
-edad = 16
-nombre ="issac"
-edadlegal = 18  
-if edad >= edadlegal:
-    print(f"felicidades  {nombre} por tu {edad} años")
+edad = 28
+nombre = "Issac"
+
+edadLegal = 18
+
+if edad >= edadLegal:
+  print(f'Felicidades {nombre} por tur mayoría de edad')
 else:
-    print(f"hola {nombre}, aún eres menor de edad")
+  print(f'Hola {nombre}, aún eres menor de edad')
 
+steps = 10
 
-steps= 10
-for i in  range(steps):
-    print(f"paso numero: {i}")
+for i in range(steps):
+  print(f"paso numero #{i}")
 
-i=0
-while(i<steps):
-    print("corriendo")
+i = 0
 
+while(i < steps):
+  i += 1
+  print("running")

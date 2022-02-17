@@ -1,27 +1,61 @@
-#Diaslaborales=["Lunes","Martes","Miércoles","Jueves","Viernes"]
-#print(Diaslaborales[0:3])
-#print(len(Diaslaborales))
+lista1 = [1, 2, 5, 8, 23, 52]
+print(lista1)
+for number in lista1:
+  print(number)
+  
+lista1.append(24)
 
-numeros = [1,2,3,4,5]
-print(numeros)
-numeros.append(6)
-print(numeros)
-numeros.append("Carlos")
-print(numeros)
-numeros.insert(2,2.50)
-print(numeros)
-numeros.extend([7,8,9,10])
-print(numeros)
+print(lista1)
 
-#otro ejemplo
+for number in lista1:
+  print(number)
 
-lista=[1,2,3,4,5,"carlos"]
-print("carlos" in lista)
-print(lista.index("carlos"))
+lista1.remove(5)
+print(lista1)
 
-Repetidos=[1,2,3,4,5,1,2,3,4,5,1,1,1,1,1,1,1,1]
-print(Repetidos.count(1))
+lista1.insert(1, 86)
+print(lista1)
 
+lista1.pop()
+print(lista1)
 
+lista1.reverse()
+print(lista1)
 
+lista1.sort()
+print(lista1)
 
+lista1.clear()
+print(lista1)
+
+lista2 = [1, 5, 3, [8, 78, 2]]
+for x in range(len(lista2)):
+  if(x == 3):
+    for y in range(len(lista2[x])):
+      print(lista2[x][y])
+  else:
+    print(lista2[x])
+
+persona = ["Jesus", "Caro", 29, ["Licenciatura", "Maestría"]]
+persona2 = ["Miguel", "Lopez", 25, ["Licenciatura", "Maestría"]]
+persona3 = ["Manuel", "Sanchez", 21, ["Licenciatura"]]
+persona4 = ["Daniel", "Rodriguez", 19, ["Maestría"]]
+
+listaDeUsuarios = []
+
+print(persona)
+
+for value in persona:
+  print(value)
+
+def registrarUsuarios(usuario):
+  listaDeUsuarios.append(usuario)
+
+registrarUsuarios(persona)
+registrarUsuarios(persona2)
+registrarUsuarios(persona3)
+registrarUsuarios(persona4)
+
+for usuario in listaDeUsuarios:
+  print(usuario)
+  

@@ -1,14 +1,27 @@
-#mutable que puede cambiar su valor = en consecuencia no mutable es que no puede
+#mutable = que puede cambiar su valor. En consecuencia no mutable es que no puede cambiar ele stado de su valor.
 
-#registronombre=("jesus","Francisco","Caro","Cota")
+variant = ["Jesús", "Francisco", [900, 100], 1]
 
-#for value in registronombre:
-#    print(value)
+registroNombreLista = ["Jesús", "Francisco", "Caro", "Cota"]
+registroNombre = ("Jesús", "Francisco", "Caro", "Cota")
 
-from platform import architecture, machine, processor
+'''
+for value in registroNombre:
+  print(value)
+'''
 
+#registroNombreLista[0] = "José"
 
-Registronombrelista=["jesus","Francisco","Caro","Cota"]
+#print(registroNombreLista[0])
 
-print(Registronombrelista[0])
-print(architecture(),machine(),processor())
+nombre = 'Miguel'
+strnumber1 = '1'
+strnumber2 = '2'
+
+n = 1
+
+#print((strnumber1.isnumeric() if int(strnumber1) else strnumber1) + (strnumber2.isnumeric() if int(strnumber2) else strnumber2))
+'''
+for charater in nombre:
+  print(charater)
+'''
